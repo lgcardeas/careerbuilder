@@ -26,7 +26,7 @@ while ( my $line = <$fh> ){
 
     if ($line =~ m/-(child\d+)=(\d+)/gi){
         die "parent not found" unless $parent;
-        push @structure, $parent .' - '. $1 . '=' . $parent_value . '~' . $2; #For esthetic propourse I will create the structure and then print it..
+        push @structure, $parent .' - '. $1 . '=' . $parent_value . '~' . $2; #For esthetic purpose I will create the structure and then print it
     }
 
 }
